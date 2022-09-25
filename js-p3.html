@@ -1,0 +1,24 @@
+
+
+<html>
+<b> First Number: </b><br>
+<input type ="text" id="txt1"><br><br>
+<b>Second Number: </b><br>
+<input type ="text" id="txt2"><br><br>
+
+<input type="button" value="Click Here" onclick="call()"><br><br>
+
+<span id="result">See Result Here...</span>
+</html>
+
+<script>
+ function call()
+ {
+   c=parseInt(txt1.value)+parseInt(txt2.value)
+
+   //using here innerHTML
+   //result.innerHTML="Addition:"+c
+   result.innerHTML="<h1><font color ='red'>Addition: "+c+"</font></h1>"
+
+ }
+ </script>
